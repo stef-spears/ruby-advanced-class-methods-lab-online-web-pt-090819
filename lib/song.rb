@@ -51,9 +51,9 @@ class Song
   def self.new_from_filename(filename)
     a = filename.split("-")
     binding.pry
-    #title = a[1].slice(-4, a[1].length)
+    name = a[1].strip.slice(-4, a[1].length)
     #self.new_by_name(title)
-    #title.artist_name = a[0]
+    #title.artist_name = a[0].strip
   end 
   
   def self.create_from_filename(filename)
