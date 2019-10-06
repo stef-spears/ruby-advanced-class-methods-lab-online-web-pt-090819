@@ -53,7 +53,7 @@ class Song
     name = a[1].strip.slice(0, a[1].length-5)
     song = self.new
     song.name = name
-    name.artist_name = a[0].strip
+    song.artist_name = a[0].strip
     song
   end 
   #binding.pry
