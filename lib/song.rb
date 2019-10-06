@@ -36,6 +36,9 @@ class Song
     self.all.find { |song| song.name == name }
   end 
 
+  def find_or_create_by_name
+  end 
+
   def self.destroy_all
     @@all.clear
   end 
