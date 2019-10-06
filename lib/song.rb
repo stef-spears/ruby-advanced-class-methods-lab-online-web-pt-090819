@@ -32,9 +32,13 @@ class Song
   end
 # binding.pry
 
-def self.destroy_all
-  @@all.clear
-end 
+  def self.find_by_name(name)
+    if @@all.include? name
+  end 
+
+  def self.destroy_all
+    @@all.clear
+  end 
 
 end
 
