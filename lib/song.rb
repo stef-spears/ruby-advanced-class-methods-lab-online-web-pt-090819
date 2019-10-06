@@ -33,7 +33,7 @@ class Song
 # binding.pry
 
   def self.find_by_name(name)
-    if @@all.include? name
+    self.all.find
   end 
 
   def self.destroy_all
