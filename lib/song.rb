@@ -30,7 +30,7 @@ class Song
     song.save
     song
   end
-# binding.pry
+
 
   def self.find_by_name(name)
     self.all.find { |song| song.name == name }
@@ -45,7 +45,7 @@ class Song
   end 
 
   def self.alphabetical
-    self.all.sort_by(name)
+    #self.all.sort_by(name)
   end 
   
   def self.new_from_filename
@@ -57,7 +57,7 @@ class Song
   def self.destroy_all
     @@all.clear
   end 
-
+# binding.pry
 end
 
 
