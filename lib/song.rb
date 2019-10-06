@@ -45,7 +45,7 @@ class Song
   end 
 
   def self.alphabetical
-    #self.all.sort_by(name)
+    self.all.sort_by{|song| song.name }
   end 
   
   def self.new_from_filename
@@ -57,7 +57,7 @@ class Song
   def self.destroy_all
     @@all.clear
   end 
-binding.pry
+# binding.pry
 end
 
 
