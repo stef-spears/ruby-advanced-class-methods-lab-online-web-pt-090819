@@ -38,8 +38,11 @@ class Song
 
   def find_or_create_by_name(name)
     if self.all.include?(name)
-      self.find_by_name(name) else
-      self.create_by_name 
+      self.all.find { |song| song.name == name } else
+      song = self.new
+      song.name = name
+      song.save
+      song 
     end 
   end 
 
